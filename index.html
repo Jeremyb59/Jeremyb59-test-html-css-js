@@ -10,17 +10,18 @@
   <body>
     <div class="bandeau-accessibilite">
       <div class="bandeau-accessibilite__action">
-        <div>Adapter le site ></div>
-        <div>Choisir le thème ></div>
+        <div popin>Adapter le site ></div>
+        <div class="display-none" popin-title="Adapter le site">
+          Contenu de la popin : Adapter le site !
+        </div>
+        <div popin>Choisir le thème ></div>
+        <div class="display-none" popin-title="Choisir le thème">
+          Contenu de la popin : Choisir le thème !
+        </div>
       </div>
-      <div class="popin" id="popin">
+      <div class="popin display-none" id="popin">
         <div class="popin-close">X</div>
-        <div class="bandeau-accessibilite__popin popin-adapter" id="accessibilite-popin">
-          <div>Contenu de la popin: Adapter le site.</div>
-        </div>
-        <div class="bandeau-accessibilite__popin popin-theme" id="accessibilite-theme">
-          <div>Contenu de la popin: Choisir le thėme.</div>
-        </div>
+        <div class="popin-content" id="popin-content"></div>
       </div>
     </div>
     <nav>
